@@ -25,6 +25,7 @@ This project follows rigorous mechanistic interpretability practices:
 - Train/Validation Split: Prevents overfitting to training data
 - Layer Sweep: Tests layers 10-20 (middle layers where high-level concepts are encoded)
 - Effect Measurement: Quantifies steering effectiveness using held-out validation set
+- Visualization: Plots layer response curves to identify optimal intervention points
 
 ### 3. Steering Vector Extraction
 
@@ -134,6 +135,7 @@ python scripts/demo.py --steering steering_vec.pt
    - Evaluate steering effect on validation set
    - Record effect magnitude
 3. Select layer with maximum steering effect
+4. Visualize layer response curve
 
 ### Preventing Data Leakage
 
